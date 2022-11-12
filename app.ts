@@ -15,3 +15,16 @@ episode = episode+1
 console.log("Next episode is "+episode);
 
 console.log("My favorite droid is "+favoriteDroid);
+
+let isEnoughToBeatMF = function(parsecs: number): boolean {
+    return parsecs < 12
+}
+
+let distance = 11
+
+console.log(`Is ${distance} parsecs enough to beat Millenium Falcon? ${isEnoughToBeatMF(distance) ? 'YES' : 'NO'}`);
+
+let call = (name: string) => console.log(`Do you copy, ${name}?`)
+
+call('R2')
+
