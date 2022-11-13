@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Student } from './student/student.model';
 
 @Component({
   selector: 'jad-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'jedi-academy';
+  luke: Student = {
+    name: 'Luke',
+    isJedi: true,
+    temple: 'Coruscant'
+  }
+
+  leia: Student = {
+    name: 'Leia',
+    isJedi: false
+  }
+
+  han: Student = {
+    name: 'Han Solo',
+    isJedi: false
+  }
 }
