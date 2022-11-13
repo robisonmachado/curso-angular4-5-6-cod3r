@@ -7,19 +7,19 @@ import { Student } from './student/student.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  luke: Student = {
-    name: 'Luke',
-    isJedi: true,
-    temple: 'Coruscant'
-  }
 
-  leia: Student = {
-    name: 'Leia',
-    isJedi: false
-  }
-
-  han: Student = {
-    name: 'Han Solo',
-    isJedi: false
-  }
+  students: Student[] = [
+    {
+      name: 'Luke',
+      isJedi: true,
+      temple: 'Coruscant'
+    },{
+      name: 'Leia',
+      isJedi: false
+    },
+    {
+      name: 'Han Solo',
+      isJedi: false
+    }
+  ]
 }
